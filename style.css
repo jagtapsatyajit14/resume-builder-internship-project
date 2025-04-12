@@ -1,0 +1,148 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+  }
+  
+  .container {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffffd9;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+  }
+  
+  h1, h2 {
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #b0bec5;
+    border-radius: 6px;
+    background-color: #f9f9fc;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 90px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    flex: 1;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .resume-output {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #ecf0f1;
+    border-left: 5px solid #3498db;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: normal;
+  }
+  
+  .resume-output h2 {
+    color: #2c3e50;
+    margin-top: 0;
+  }
+  
+  /* Change Background Button */
+.bg-change-btn {
+    margin: 10px auto;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bg-change-btn:hover {
+    background-color: #732d91;
+  }
+  
+  /* Predefined background styles */
+  .bg-1 {
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  }
+  
+  .bg-2 {
+    background: linear-gradient(to right, #fceabb, #f8b500);
+  }
+  
+  .bg-3 {
+    background: linear-gradient(to right, #d3cce3, #e9e4f0);
+  }
+  
+  .bg-4 {
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+  }
+  
+  .bg-5 {
+    background: url('https://www.transparenttextures.com/patterns/foggy-birds.png'), #1abc9c;
+    background-size: cover;
+  }
+  
+  /* Add smooth transition for background */
+  body {
+    transition: background 0.8s ease;
+  }
+
+  /* CSS for print */
+@media print {
+    body * {
+      visibility: hidden; /* Hide everything on the page */
+    }
+  
+    .resume-output, .resume-output * {
+      visibility: visible; /* Only show the resume output */
+    }
+  
+    .resume-output {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      padding: 20px;
+      background: white;
+      color: black;
+      box-shadow: none;
+    }
+  }
+  
